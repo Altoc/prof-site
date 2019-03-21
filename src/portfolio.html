@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Ian Whitesel | Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./static/css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/portfolio.css">
 	<link rel="icon" href="./static/images/favicon.png"> <!-- favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> <!-- Space Mono Font -->
-	<script type="text/javascript" src="./static/js/portfolio.js"></script>
-	<script type="text/javascript" src="./static/js/name_generator.js"></script> <!-- name generator -->
-	<script type="text/javascript" src="./static/js/tower_of_hanoi.js"></script> <!-- tower of hanoi -->
+	<script type="text/javascript" src="../static/js/portfolio.js"></script>
+	<script type="text/javascript" src="../static/js/name_generator.js"></script> <!-- name generator -->
+	<script type="text/javascript" src="../static/js/tower_of_hanoi.js"></script> <!-- tower of hanoi -->
 </head>
 <body>
 	<div id="banner">
@@ -24,7 +24,7 @@
 			<button id="button_towerOfHanoi" class="main" onclick="projectsToggle(2);"><b>Tower of Hanoi</b></button>
 			<button id="button_nameGenerator" class="main" onclick="projectsToggle(3);"><b>Name Generator</b></button>
 			<button id="button_saveNewton" class="main" onclick="projectsToggle(4);"><b>Save Newton</b></button>
-			<button id="button_TTVM" class="main" onclick="projectsToggle(5);"><b>TT:VM</b></button>
+		<!--	<button id="button_TTVM" class="main" onclick="projectsToggle(5);"><b>TT:VM</b></button> -->
 			<button id="button_speakEasy" class="main" onclick="projectsToggle(6);"><b>SpeakEasy</b></button>
 			<button id="button_MIPS" class="main" onclick="projectsToggle(7);"><b>MIPS</b></button>
 			<button id="button_C++" class="main" onclick="projectsToggle(8);"><b>C++</b></button>
@@ -44,49 +44,59 @@
 				
 			<div id="page_antiSocialMode" class="page_project">		<!-- ANTI-SOCIAL MODE -->
 				<h2><u>ANTI-SOCIAL MODE</u></h2>
-				<p><b>
+				<p>
 					Anti-Social Mode(ASM) is a World of Warcraft(WoW) addon that I develop on my down-time.
 					You can read about ASM's features and usage and download ASM in the Twitch/Curse application, or by visiting 
 					<a href="https://www.curseforge.com/wow/addons/anti-social-mode">this curseforge link</a>.
-				</b></p>
-				<p><b>
+				</p>
+				<p>
 					You can also view my code for this project <a href="https://github.com/Altoc/Anti-Social-Mode">here</a>.
-				</b></p>
+				</p>
 				
 				<h2><u>Always In Development</u></h2>
-				<p><b>
+				<p>
 					While there is a finished release of Anti-Social Mode, I am always adding feature and polishing the addon up.
 					This addon started as a way for me to practice using WoW lua and to begin to understand how WoW works 
 					behind the scenes, and as I learn more and brainstorm on how this addon's performance can better be executed,
 					I add ideas and techniques to it.
-				</b></p>
+				</p>
 				<div id="ASM_images">
 					<h2><u>Images</u></h2>
-					<p><img src="./static/images/asm_icon.png" width="768" height="768"/></p>
-					<p><img src="./static/images/asm_1.png" width="338" height="184"/></p>
-					<p><img src="./static/images/asm_2.png" width="620" height="92"/></p>
-					<p><img src="./static/images/asm_3.png" width="276" height="344"/></p>
-					<p><img src="./static/images/anti-social_mode.png" width="331.39" height="127"/></p>
+					<table>
+						<tr>
+							<td>
+							<img src="../static/images/asm_icon.png" width="256" height="256"/>
+							<img src="../static/images/asm_1.png" width="338" height="184"/>
+							</td>
+							<td>
+							<img src="../static/images/asm_2.png" width="620" height="92"/>
+							<img src="../static/images/asm_3.png" width="276" height="344"/>
+							<img src="../static/images/anti-social_mode.png" width="331.39" height="127"/>
+							</td>
+					</table>
 				</div>
 			</div>
 				
 			<div id="page_towerOfHanoi" class="page_project">		<!-- Tower OF Hanoi -->
 				<h2><u>My Program for the Tower of Hanoi</u></h2>
-				<p>
-				The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/towerOfHanoi.cpp">C++ version</a>.
-				</p>
-				<p>
-				The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/tower_of_hanoi.js">Javascript version</a>.
-				</p>
-				<div id="playable_tower">
-					Number of Rings: <input type="text" id="input_rings" value="8">
-					<button onclick="tower_update();">Button</button>
-					<p id="tower_output"><b><u>Warning:</u></b> This will generate 2^(n) - 1 steps of your input.</p>
-				</div>
-				<p>
-				The idea behind programming the Tower of Hanoi is you can use either a recursive method, or an iterative method. 
-				I chose to use an iterative method.
-				</p>
+				<table>
+					<tr>
+					<td>
+					<p>The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/towerOfHanoi.cpp">C++ version</a>.</p>
+					<p>The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/tower_of_hanoi.js">Javascript version</a>.</p>
+					<div id="playable_tower_input">
+						Number of Rings: <input type="text" id="input_rings" value="3">
+						<button onclick="tower_update();">Generate</button>
+						<p id="tower_output"><b><u>Warning:</u></b> This will generate 2^(n) - 1 steps of your input.
+						I do not recommend attempting excessively large numbers on the web version</p>
+					</div>
+					<div id="playable_tower"></div>
+					<td>
+					<td>
+					<img src="../static/images/tower_of_hanoi.png" width="512" height="512"/>
+					</td>
+					</tr>
+				</table>
 				
 				<h2><u>Summary of the Tower</u></h2>
 				<p>
@@ -157,30 +167,38 @@
 					On my <a href="https://www.github.com/altoc">Github Page</a> is both a C++ version and a JS version.
 					Below is a demonstration of the JS version:
 				</p>
-			
-				<button onclick="generateName()">Generate Name!</button>
-
-				<h1 id="generatedName">Name Appears Here</h1>
+				<table>
+					<tr>
+					<td>
+					<button onclick="generateName()">Generate Name!</button>
+					<h1 id="generatedName">Name Appears Here</h1>
+					</td>
+					</tr>
+				</table>
 			</div>
 				
 			<div id="page_saveNewton" class="page_project">			<!-- SAVE NEWTON -->
-				<img src="./static/images/lvMenu_title.png" width="512" height="512"/>
-				<h2><u>Can You Save Newton?!</u></h2>
-				<p><h3>
-					<u>Save Newton</u> is an Action Adventure game, with a twist of education! Battle your way through 5 chaotic levels as you help a young boy named Euclid resuce his dog, Newton!
-					The catch is, the only way to battle the bad guys and <b>save Netwon</b> is to perform basic arithmetic! This game is targetted towards anyone who has ever felt like they needed
-					to sharpen their addition, subtraction, division, or multiplication skills, but has a difficult time trying to do so in conventional means.
-				</h3></p>
-				<p><h3>
-					You can play <u>Save Newton!</u> on itch.io, <a href="https://altoc.itch.io/save-newton">here!</a>
-				</p></h3>
-				<p><h3>
-					You can view my code for <u>Save Newton!</u> on Github, <a href="https://github.com/Altoc/Save-Newton">here!</a>
-				</p></h3>
+				<table>
+					<tr>
+						<td><img src="../static/images/lvMenu_title.png" width="256" height="256"/></td>
+						<td><h2><u>Can You Save Newton?!</u></h2>
+						<p><h3>
+							<u>Save Newton</u> is an Action Adventure game, with a twist of education! Battle your way through 5 chaotic levels as you help a young boy named Euclid resuce his dog, Newton!
+							The catch is, the only way to battle the bad guys and <b>save Netwon</b> is to perform basic arithmetic! This game is targetted towards anyone who has ever felt like they needed
+							to sharpen their addition, subtraction, division, or multiplication skills, but has a difficult time trying to do so in conventional means.
+						</h3></p>
+						<p><h3>
+							You can play <u>Save Newton!</u> on itch.io, <a href="https://altoc.itch.io/save-newton">here!</a>
+						</p></h3>
+						<p><h3>
+							You can view my code for <u>Save Newton!</u> on Github, <a href="https://github.com/Altoc/Save-Newton">here!</a>
+						</p></h3></td>
+					</tr>
+				</table>
 			</div>
 				
-			<div id="page_TTVM" class="page_project">			<!-- Table Tennis: Virtual Masters! GAME -->
-				<h2><u>A Challenge Awaits...</u></h2>
+<!--			<div id="page_TTVM" class="page_project">			<!-- Table Tennis: Virtual Masters! GAME -->
+<!--				<h2><u>A Challenge Awaits...</u></h2>
 				<p><h3>
 					<u>Table Tennis: Virtual Masters!</u> is a 3D table tennis/ping pong game in which you can face off against friends, 
 					or complete a campaign of dexterity challenges.  Do you have what it takes to be called a Virtual Master?!
@@ -190,26 +208,32 @@
 				<p><h3>
 					You can play <u>Table Tennis: Virtual Masters!</u> on itch.io, when available, <a href="https://altoc.itch.io/table-tennis-virtual-masters">here!</a>
 				</p></h3>
-			</div>
+			</div> -->
 				
 			<div id="page_speakEasy" class="page_project">		<!-- SPEAK EASY -->
-				<img src="./static/images/speak_easy_logo_01.jpg" width="512" height="512"/>
-				
-				<p><h2><b>
-					Speak Easy is a group project in which myself and 8 other students from Kent State's Software Engineering Fall 2018 course created
-					a marketable project. Speak Easy allows users to create chat rooms by placing 'chat room nodes' at their current location on the planet.
-					Users can then set their room pick-up radius to see rooms nearby.
-				</p>
-				<p>
-					My specific role in this was Software Developer, and I did much of the work on the front end and the back end of the site. You can view my
-					specific work for the site <a href="https://github.com/Altoc/Speak-Easy"> here</a>.
-				</p>
-				<p>
-					Check out our finished product <a href="http://vzyrianov.pythonanywhere.com/">here </a>.
-				</p>
-				<p>
-					See my personal tinkering here, only created and modified by me<a href="http://altoc.pythonanywhere.com/"> here</a>.
-				</b></h2></p>
+				<table>
+					<tr>
+						<td><img src="../static/images/speak_easy_logo_01.jpg" width="256" height="256"/></td>
+						<td><p><h3>
+							<strong>Speak Easy is a group project in which myself and 8 other students from Kent State's Software Engineering Fall 2018 course created
+							a marketable project.</strong> 
+						
+						</h3></p>
+						<p>
+							Speak Easy allows users to create chat rooms by placing 'chat room nodes' at their current location on the planet.
+							Users can then set their room pick-up radius to see rooms nearby.
+						</p>
+						<p>
+							My specific role in this was Software Developer, and I did much of the work on the front end and the back end of the site. You can view my
+							specific work for the site <a href="https://github.com/Altoc/Speak-Easy"> here</a>.
+						</p>
+						<p>
+							Check out our finished product <a href="http://vzyrianov.pythonanywhere.com/">here </a>.
+						</p>
+						<p>
+							See my personal tinkering here, only created and modified by me<a href="http://altoc.pythonanywhere.com/"> here</a>.
+						</p></td>
+				</table>
 			</div>
 				
 			<div id="page_MIPS" class="page_project">		<!-- MIPS -->
@@ -232,10 +256,10 @@
 		<div id="footer">
 			<article>
 				Find me online:
-				<a href="https://twitter.com/odasik"><img src="./static/images/twitter_logo.png" width="24" height="24"></a>
-				<a href="https://github.com/Altoc"><img src="./static/images/github.png" width="24" height="24"></a>
-				<a href="https://altoc.itch.io/"><img src="./static/images/itchio.jpg" width="24" height="24"></a>
-				<a href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="./static/images/linkedin_logo.png" width="24" height="24"></a>
+				<a href="https://twitter.com/odasik"><img src="../static/images/twitter_logo.png" width="24" height="24"></a>
+				<a href="https://github.com/Altoc"><img src="../static/images/github.png" width="24" height="24"></a>
+				<a href="https://altoc.itch.io/"><img src="../static/images/itchio.jpg" width="24" height="24"></a>
+				<a href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="../static/images/linkedin_logo.png" width="24" height="24"></a>
 				Email: iwhitese@kent.edu
 			</article>
 		</div>
