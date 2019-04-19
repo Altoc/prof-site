@@ -1,5 +1,5 @@
 <?php
 
-header("Location: src/index.html");
+header("Location: src/home.php");
 
 ?>
