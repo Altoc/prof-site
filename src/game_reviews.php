@@ -2,9 +2,19 @@
 <html>
 <head>
 	<title>Ian Whitesel | Game Reviews</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/game_reviews.css">
+	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> <!-- Space Mono Font -->
 </head>
 <body>
-	<div id="game_reviews">
+	<div id="banner">
+		<div id="button_container_banner">
+			<button id="button_Home"  		class="banner"><b>Home</b></button>
+			<button id="button_Portfolio"  	class="banner"><b>Portfolio</b></button>
+			<button id="button_ContactUs"  	class="banner"><b>Contact Me</b></button>
+		</div>
+	</div>
+	<div id="main">
 		<div class="game_review">
 			Final Fantasy (NES)	<br>
 			COMPLETED(Y/N)		<br>

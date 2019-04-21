@@ -3,7 +3,7 @@
 <head>
 	<title>Ian Whitesel | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/portfolio.css">
-	<link rel="icon" href="./static/images/favicon.png"> <!-- favicon -->
+	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> <!-- Space Mono Font -->
 	<script type="text/javascript" src="../static/js/portfolio.js"></script>
 	<script type="text/javascript" src="../static/js/name_generator.js"></script> <!-- name generator -->
@@ -24,7 +24,7 @@
 			<button id="button_towerOfHanoi" class="main" onclick="projectsToggle(2);"><b>Tower of Hanoi</b></button>
 			<button id="button_nameGenerator" class="main" onclick="projectsToggle(3);"><b>Name Generator</b></button>
 			<button id="button_saveNewton" class="main" onclick="projectsToggle(4);"><b>Save Newton</b></button>
-		<!--	<button id="button_TTVM" class="main" onclick="projectsToggle(5);"><b>TT:VM</b></button> -->
+			<button id="button_tickIT" class="main" onclick="projectsToggle(5);"><b>tickIT</b></button>
 			<button id="button_speakEasy" class="main" onclick="projectsToggle(6);"><b>SpeakEasy</b></button>
 			<button id="button_MIPS" class="main" onclick="projectsToggle(7);"><b>MIPS</b></button>
 			<button id="button_C++" class="main" onclick="projectsToggle(8);"><b>C++</b></button>
@@ -38,19 +38,20 @@
 					Please feel free to browse the project I have worked on by clicking them on the left.
 				</p>
 				<p>
-					Also see my <a href="https://github.com/Altoc">Github</a> and my <a href="https://altoc.itch.io/">Itchi.io</a>.
+					Please also see my <a target="_blank" rel="noopener noreferrer" href="../static/pdfs/resume.pdf">resume</a>, and 
+					my <a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc">Github</a>.
 				</p>
 			</div>
 				
 			<div id="page_antiSocialMode" class="page_project">		<!-- ANTI-SOCIAL MODE -->
-				<h2><u>ANTI-SOCIAL MODE</u></h2>
+				<h2><u>ANTI-SOCIAL MODE | Game Addon</u></h2>
 				<p>
 					Anti-Social Mode(ASM) is a World of Warcraft(WoW) addon that I develop on my down-time.
 					You can read about ASM's features and usage and download ASM in the Twitch/Curse application, or by visiting 
-					<a href="https://www.curseforge.com/wow/addons/anti-social-mode">this curseforge link</a>.
+					<a target="_blank" rel="noopener noreferrer" href="https://www.curseforge.com/wow/addons/anti-social-mode">this curseforge link</a>.
 				</p>
 				<p>
-					You can also view my code for this project <a href="https://github.com/Altoc/Anti-Social-Mode">here</a>.
+					You can also view my code for this project <a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/Anti-Social-Mode">here</a>.
 				</p>
 				
 				<h2><u>Always In Development</u></h2>
@@ -78,12 +79,12 @@
 			</div>
 				
 			<div id="page_towerOfHanoi" class="page_project">		<!-- Tower OF Hanoi -->
-				<h2><u>My Program for the Tower of Hanoi</u></h2>
+				<h2><u>Tower of Hanoi | Game</u></h2>
 				<table>
 					<tr>
 					<td>
-					<p>The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/towerOfHanoi.cpp">C++ version</a>.</p>
-					<p>The code for my <a href="https://github.com/Altoc/TowerOfHanoi/blob/master/tower_of_hanoi.js">Javascript version</a>.</p>
+					<p>The code for my <a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/TowerOfHanoi/blob/master/towerOfHanoi.cpp">C++ version</a>.</p>
+					<p>The code for my <a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/TowerOfHanoi/blob/master/tower_of_hanoi.js">Javascript version</a>.</p>
 					<div id="playable_tower_input">
 						Number of Rings: <input type="text" id="input_rings" value="3">
 						<button onclick="tower_update();">Generate</button>
@@ -161,10 +162,10 @@
 			</div>
 				
 			<div id="page_nameGenerator" class="page_project">			<!-- NAME GENERATOR -->
-				<h2><u> Name Generator! </u></h2>
+				<h2><u> Name Generator | String Manipulation</u></h2>
 				<p>
 					This is a little name generator I made on a rainy Saturday. The names make me laugh, so it was worth-while. 
-					On my <a href="https://www.github.com/altoc">Github Page</a> is both a C++ version and a JS version.
+					On my <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/altoc">Github Page</a> is both a C++ version and a JS version.
 					Below is a demonstration of the JS version:
 				</p>
 				<table>
@@ -181,85 +182,130 @@
 				<table>
 					<tr>
 						<td><img src="../static/images/lvMenu_title.png" width="256" height="256"/></td>
-						<td><h2><u>Can You Save Newton?!</u></h2>
+						<td><h2><u>Save Newton! | Educational Game</u></h2>
 						<p><h3>
 							<u>Save Newton</u> is an Action Adventure game, with a twist of education! Battle your way through 5 chaotic levels as you help a young boy named Euclid resuce his dog, Newton!
 							The catch is, the only way to battle the bad guys and <b>save Netwon</b> is to perform basic arithmetic! This game is targetted towards anyone who has ever felt like they needed
 							to sharpen their addition, subtraction, division, or multiplication skills, but has a difficult time trying to do so in conventional means.
 						</h3></p>
 						<p><h3>
-							You can play <u>Save Newton!</u> on itch.io, <a href="https://altoc.itch.io/save-newton">here!</a>
+							You can play <u>Save Newton!</u> on itch.io, <a target="_blank" rel="noopener noreferrer" href="https://altoc.itch.io/save-newton">here!</a>
 						</p></h3>
 						<p><h3>
-							You can view my code for <u>Save Newton!</u> on Github, <a href="https://github.com/Altoc/Save-Newton">here!</a>
+							You can view my code for <u>Save Newton!</u> on Github, <a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/Save-Newton">here!</a>
 						</p></h3></td>
 					</tr>
 				</table>
 			</div>
 				
-<!--			<div id="page_TTVM" class="page_project">			<!-- Table Tennis: Virtual Masters! GAME -->
-<!--				<h2><u>A Challenge Awaits...</u></h2>
+			<div id="page_tickIT" class="page_project">			<!-- tickIT -->
+				<h2><u>tickIT | Web Application</u></h2>
 				<p><h3>
-					<u>Table Tennis: Virtual Masters!</u> is a 3D table tennis/ping pong game in which you can face off against friends, 
-					or complete a campaign of dexterity challenges.  Do you have what it takes to be called a Virtual Master?!
-
-					This game is currently under development. Expected first release date is DEC 2018.
+					<u>tickIT</u> is a ticket managing system designed for my capstone class at Kent State University.
+					It is a web-browser based application that allows IT departments to create, modify, and close tickets
+					for work orders.
 				</h3></p>
 				<p><h3>
-					You can play <u>Table Tennis: Virtual Masters!</u> on itch.io, when available, <a href="https://altoc.itch.io/table-tennis-virtual-masters">here!</a>
+					Please contact me for a demo of tickIT, as it has sensitive log in information!
+					Link regardless: <a target="_blank" rel="noopener noreferrer" href="http://capstone3.cs.kent.edu">tickIT</a>
 				</p></h3>
-			</div> -->
+			</div>
 				
 			<div id="page_speakEasy" class="page_project">		<!-- SPEAK EASY -->
 				<table>
 					<tr>
-						<td><img src="../static/images/speak_easy_logo_01.jpg" width="256" height="256"/></td>
-						<td><p><h3>
-							<strong>Speak Easy is a group project in which myself and 8 other students from Kent State's Software Engineering Fall 2018 course created
-							a marketable project.</strong> 
-						
+						<td><img src="../static/images/speak_easy_logo_01.jpg" width="256" height="256"/> <h2><u>Web Application</u></h2></td>
+					</tr>
+					<tr>
+						<td>
+						<p><h3>
+						<strong>Speak Easy is a group project in which myself and 8 other students from Kent State's Software Engineering Fall 2018 course created
+						a marketable project.</strong> 
 						</h3></p>
 						<p>
-							Speak Easy allows users to create chat rooms by placing 'chat room nodes' at their current location on the planet.
-							Users can then set their room pick-up radius to see rooms nearby.
+						Speak Easy allows users to create chat rooms by placing 'chat room nodes' at their current location on the planet.
+						Users can then set their room pick-up radius to see rooms nearby.
 						</p>
 						<p>
-							My specific role in this was Software Developer, and I did much of the work on the front end and the back end of the site. You can view my
-							specific work for the site <a href="https://github.com/Altoc/Speak-Easy"> here</a>.
+						My specific role in this was Software Developer, and I did much of the work on the front end and the back end of the site. The hosted 
+						site has been taken down, but you can view my specific work for the site 
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/Speak-Easy"> here</a>.
 						</p>
-						<p>
-							Check out our finished product <a href="http://vzyrianov.pythonanywhere.com/">here </a>.
-						</p>
-						<p>
-							See my personal tinkering here, only created and modified by me<a href="http://altoc.pythonanywhere.com/"> here</a>.
-						</p></td>
+						</td>
+					</tr>
 				</table>
 			</div>
 				
 			<div id="page_MIPS" class="page_project">		<!-- MIPS -->
 				<h2><u>My Work With Assembly</u></h2>
 				<p><h3>
-					You can view my work in MIPS assembly language by naviagting through my github repositories, <a href="https://github.com/Altoc?tab=repositories">here</a>.
+					You can view my work in MIPS assembly language for my university class Computer Architecture by naviagting through my github repositories,
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc?tab=repositories">here</a>.
 				</p></h3>
 				<p><h3>
-					For compilation and execution, I used the MARS assembly environment, found <a href="http://courses.missouristate.edu/KenVollmar/mars/">here</a>.
+					For compilation and execution, I used the MARS assembly environment, found 
+					<a target="_blank" rel="noopener noreferrer" href="http://courses.missouristate.edu/KenVollmar/mars/">here</a>.
 				</p></h3>
 			</div>
 			
 			<div id="page_cPlusPlus" class="page_project">		<!-- C++ -->
 				<h2><u>My Work With C++</u></h2>
 				<p><h3>
-					You can view my work in C++ by naviagting through my github repositories, <a href="https://github.com/Altoc?tab=repositories">here</a>.
+					Kent State University uses C++ as the primary language for teaching Object Oriented Programming.
+				</p></h3>
+				<p><h3>
+					You can view my work in C++ for both the university and my own personal tinkerings 
+					by naviagting through my github repositories, 
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc?tab=repositories">here</a>.
+				</p></h3>
+				<p><h2>
+					Recreation of std::string
+				</p></h2>
+				<p><h3>
+					As assigned by Computer Science II: Data Structures and Abstractions, I recreated the standard library version of string in C++.
+					You can view the code for this library 
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS2/String">here</a>.
+				</p></h3>
+				<p><h2>
+					Big Int
+				</p></h2>
+				<p><h3>
+					As assigned by Computer Science II: Data Structures and Abstractions, I designed and implemented a library to allow for larger 
+					ints. You can view the code for this library 
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS2/Bigint">here</a>.
+				</p></h3>
+				<p><h2>
+					Assembler
+				</p></h2>
+				<p><h3>
+					As assigned by Computer Science II: Data Structures and Abstractions, I created a system to emulate the process 
+					of code assembly.
+					You can view the code for this library 
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS2/Assembler">here</a>.
+				</p></h3>
+				<p><h2>
+					Work for Computer Science IA & IB
+				</p></h2>
+				<p><h3>
+					My work specifically for CSIAB at Kent State University. View this code  
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS1">here</a>.
+				</p></h3>
+				<p><h2>
+					Work for Computer Science III
+				</p></h2>
+				<p><h3>
+					My work specifically for CSIII at Kent State University. View this code  
+					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS3">here</a>.
 				</p></h3>
 			</div>
 		</div>
 		<div id="footer">
 			<article>
 				Find me online:
-				<a href="https://twitter.com/altocgamedev"><img src="../static/images/twitter_logo.png" width="24" height="24"></a>
-				<a href="https://github.com/Altoc"><img src="../static/images/github.png" width="24" height="24"></a>
-				<a href="https://altoc.itch.io/"><img src="../static/images/itchio.jpg" width="24" height="24"></a>
-				<a href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="../static/images/linkedin_logo.png" width="24" height="24"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/altocgamedev"><img src="../static/images/twitter_logo.png" width="24" height="24"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc"><img src="../static/images/github.png" width="24" height="24"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://altoc.itch.io/"><img src="../static/images/itchio.jpg" width="24" height="24"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="../static/images/linkedin_logo.png" width="24" height="24"></a>
 				Email: iwhitese@kent.edu
 			</article>
 		</div>

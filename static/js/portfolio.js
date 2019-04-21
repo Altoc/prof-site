@@ -10,7 +10,7 @@ function projectsToggle(x){
 		case 2: var element = document.getElementById("page_towerOfHanoi"); break;
 		case 3: var element = document.getElementById("page_nameGenerator"); break;
 		case 4: var element = document.getElementById("page_saveNewton"); break;
-	//	case 5: var element = document.getElementById("page_TTVM"); break;
+		case 5: var element = document.getElementById("page_tickIT"); break;
 		case 6: var element = document.getElementById("page_speakEasy"); break;
 		case 7: var element = document.getElementById("page_MIPS"); break;
 		case 8: var element = document.getElementById("page_cPlusPlus"); break;
@@ -21,7 +21,7 @@ function projectsToggle(x){
 		page_towerOfHanoi.style.display = "none";
 		page_nameGenerator.style.display = "none";
 		page_saveNewton.style.display = "none";
-	//	page_TTVM.style.display = "none";
+		page_tickIT.style.display = "none";
 		page_speakEasy.style.display = "none";
 		page_MIPS.style.display = "none";
 		page_cPlusPlus.style.display = "none";

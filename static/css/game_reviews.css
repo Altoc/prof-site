@@ -41,11 +41,6 @@ button:hover{
 	bottom: 0;
 	left: 0;
 }
-#button_container_main{
-	text-align: center;
-	width: 0;
-	float: left;
-}
 #main{
 	font-size: 18px;
 	width: 100vw;
@@ -53,11 +48,15 @@ button:hover{
 	background-color: grey;
 }
 #page_container{
+	width: 96%;
 	float: left;
-	margin-left: 8%;
-	margin-right: 8%;
 	background-color: white;
-    height: auto;
+	margin-left: 2%;
+	height: 70vh;
+}
+#content{
+	margin-left: 2%;
+	margin-right: 2%;
 }
 #footer{
 	text-align: center;
@@ -70,45 +69,4 @@ button:hover{
 	left: 0;
 	width: 100%;
 	background-color: white;
-}
-.page_project{
-	margin-left: 1vw;
-	padding-right: 5vw;
-	height: 70vh;
-	overflow-y: auto;
-}
-#page_antiSocialMode{
-	display: none;
-}
-#ASM_images{
-	text-align: center;
-}
-#page_towerOfHanoi{
-	display: none;
-}
-#playable_tower{
-	width: 512px;
-	height: 256px;
-	overflow: auto;
-}
-#page_nameGenerator{
-	display: none;
-}
-#page_saveNewton{
-	display: none;
-}
-#page_tickIT{
-	display: none;
-}
-#page_speakEasy{
-	display: none;
-}
-#page_MIPS{
-	display: none;
-}
-#page_cPlusPlus{
-	display: none;
-}
-#page_portfolio{
-	display: block;
 }

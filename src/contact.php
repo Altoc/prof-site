@@ -3,7 +3,7 @@
 <head>
 	<title>Ian Whitesel | Contact</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/contact.css">
-	<link rel="icon" href="./static/images/favicon.png"> <!-- favicon -->
+	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> <!-- Space Mono Font -->
 	<script type="text/javascript" src="../static/js/contact.js"></script>
 </head>
@@ -22,10 +22,10 @@
 				<div id="footer">
 					<article>
 						<h2>Find me online:
-						<a href="https://twitter.com/altocgamedev"><img src="../static/images/twitter_logo.png" width="24" height="24"></a>
-						<a href="https://github.com/Altoc"><img src="../static/images/github.png" width="24" height="24"></a>
-						<a href="https://altoc.itch.io/"><img src="../static/images/itchio.jpg" width="24" height="24"></a>
-						<a href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="../static/images/linkedin_logo.png" width="24" height="24"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/altocgamedev"><img src="../static/images/twitter_logo.png" width="24" height="24"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc"><img src="../static/images/github.png" width="24" height="24"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://altoc.itch.io/"><img src="../static/images/itchio.jpg" width="24" height="24"></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ian-whitesel-76ba40149/"><img src="../static/images/linkedin_logo.png" width="24" height="24"></a>
 					</article>
 				</div>
 				<div>
