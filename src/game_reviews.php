@@ -24,7 +24,7 @@
 		<form action='new_review.php' method='post'><input type='submit' value='New Review'></form>
 		<div id="reviews">
 			<table>
-				<th>Console</th><th>Title</th><th>Date</th>
+				<th>Console</th><th>Title</th><th>Overall</th><th>Date</th>
 				<?php
 					$query = "SELECT title,console,overall,date FROM game_reviews";
 					$Array = mysqli_query($DB, $query);
