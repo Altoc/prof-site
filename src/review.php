@@ -27,9 +27,9 @@
 			<h2>Did I Beat It?</h2>
 			<?php
 				if($row['completed'] == 1){
-					echo("I did complete this game.");
+					echo("I DID complete this game.");
 				} else {
-					echo("I did not complete this game.");
+					echo("I did NOT complete this game.");
 				}
 			?>
 		</div>
