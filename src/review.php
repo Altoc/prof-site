@@ -54,31 +54,5 @@
 			<?php echo($row['design']); ?>
 		</div>
 	</div>
-	<div id="comments">
-		<div id="new_comment">
-			<form action="new_comment.php" method="post">
-				<textarea name="comment" rows="10" cols="50" maxlength="500">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-		<div id="old_comments">
-			<?php
-				<?php
-					$query = "SELECT * FROM game_review_comments WHERE game";
-					$Array = mysqli_query($DB, $query);
-					while($row = mysqli_fetch_assoc($Array)){
-						echo("<tr>" . 
-							"<td>" . $row['console'] . "</td>" . 
-							"<td>" . $row['title'] . "</td>" . 
-							"<td>" . $row['overall'] . "/10</td>" . 
-							"<td>" . $row['date'] . "</td>" . 
-							"<td><form action='review.php' method='post'><input type='hidden' name='title' value='" . $row['title'] . "'>" . 
-							"<input type='submit' value='Read Review'></form></td>" . 
-							"</tr>");
-					}
-				?>
-			?>
-		</div>
-	</div>
 </body>
 </html>
