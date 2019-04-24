@@ -5,14 +5,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ian Whitesel | <?php echo($_POST['title']); ?></title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/review.css"> -->
-	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
 	<?php
-		$query = "SELECT * FROM game_reviews WHERE title='" . $_POST['title'] . "'";
+		if(isset($_POST['title'])){
+			$title = $_POST['title'];
+			$_SESSION['title'] = $title;
+		} else {
+			$title = $_SESSION['title'];
+		}
+
+		$query = "SELECT * FROM game_reviews WHERE title='$title'";
 		$sql = mysqli_query($DB, $query);
 		$row = mysqli_fetch_assoc($sql);
 	?>
+	<title>Ian Whitesel | <?php echo($title); ?></title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/review.css"> -->
+	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
+<style>
+	#comment_section{
+		height: 50vh;
+		overflow-y: auto;
+	}
+</style>
 </head>
 <body>
 	<div id="banner">
@@ -52,6 +65,23 @@
 		<div id="design">
 			<h2>Gameplay Design</h2>
 			<?php echo($row['design']); ?>
+		</div>
+		<div id="comment_section">
+			<h2>COMMENTS</h2>
+			<br>
+			Leave a Comment here
+			<form action="dbreview_comment.php" method="post">
+				<textarea name="message" rows="10" cols="50" maxlength="500"></textarea>
+				<input type="hidden" name="date" value=<?php $date = date('Y-m-d H:i:s'); echo("'" . $date . "'");?>>
+				<br><input type="submit" value="Submit">
+			</form>
+			<?php
+				$query 	= "SELECT * FROM game_review_comments WHERE game='$title'";
+				$sql 	= mysqli_query($DB, $query);
+				while($row = mysqli_fetch_assoc($sql)){
+					echo($row['date'] . "<br>" . $row['message'] . "<br><br>");
+				}
+			?>
 		</div>
 	</div>
 </body>
