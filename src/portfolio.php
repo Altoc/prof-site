@@ -13,12 +13,12 @@
 		  document.getElementById("button_GameReview").onclick = function () {window.location.href='./game_reviews.php'};
 		}
 	</script>
+	<script type="text/javascript" src="../static/js/portfolio.js"></script>
 	<script type="text/javascript" src="../static/js/name_generator.js"></script> <!-- name generator -->
 	<script type="text/javascript" src="../static/js/tower_of_hanoi.js"></script> <!-- tower of hanoi -->
 </head>
 <body>
 	<?php include("banner.php"); ?>
-	
 	<div id="main">
 		<div id="button_container_main">
 			<button id="button_antiSocialMode" class="main" onclick="projectsToggle(1);"><b>Anti-Social Mode</b></button>
@@ -30,7 +30,6 @@
 			<button id="button_MIPS" class="main" onclick="projectsToggle(7);"><b>MIPS</b></button>
 			<button id="button_C++" class="main" onclick="projectsToggle(8);"><b>C++</b></button>
 		</div>
-		
 		<div id="page_container">
 			<div id="page_portfolio" class="page_project">				<!-- PROJECTS -->
 				<h1>Portfolio</h1>
