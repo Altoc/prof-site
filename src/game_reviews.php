@@ -6,14 +6,22 @@
 <html>
 <head>
 	<title>Ian Whitesel | Game Reviews</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/game_reviews.css"> -->
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
 	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
+	<script>
+		window.onload = function (){
+		  document.getElementById("button_Portfolio").onclick = function () {window.location.href='./portfolio.php'};
+		  document.getElementById("button_ContactUs").onclick = function () {window.location.href='./contact.php'};
+		  document.getElementById("button_Home").onclick = function () {window.location.href='./home.php'};
+		  document.getElementById("button_GameReview").onclick = function () {window.location.href='./game_reviews.php'};
+		}
+	</script>
 </head>
 <body>
-	<div id="banner">
-		Game Reviews <form action='new_review.php' method='post'><input type='submit' value='New Review'></form>
-	</div>
+	<?php include("banner.php"); ?>
 	<div id="main">
+		Game Reviews
+		<form action='new_review.php' method='post'><input type='submit' value='New Review'></form>
 		<div id="reviews">
 			<table>
 				<th>Console</th><th>Title</th><th>Date</th>
