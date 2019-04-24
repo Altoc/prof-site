@@ -5,16 +5,17 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/contact.css">
 	<link rel="icon" href="../static/images/favicon.png"> <!-- favicon -->
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> <!-- Space Mono Font -->
-	<script type="text/javascript" src="../static/js/contact.js"></script>
+	<script>
+		window.onload = function (){
+		  document.getElementById("button_Portfolio").onclick = function () {window.location.href='./portfolio.php'};
+		  document.getElementById("button_ContactUs").onclick = function () {window.location.href='./contact.php'};
+		  document.getElementById("button_Home").onclick = function () {window.location.href='./home.php'};
+		  document.getElementById("button_GameReview").onclick = function () {window.location.href='./game_reviews.php'};
+		}
+	</script>
 </head>
 <body>
-	<div id="banner">
-		<div id="button_container_banner">
-			<button id="button_Home"  		class="banner"><b>Home</b></button>
-			<button id="button_Portfolio"  	class="banner"><b>Portfolio</b></button>
-			<button id="button_ContactUs"  	class="banner"><b>Contact Me</b></button>
-		</div>
-	</div>
+	<?php include("banner.php"); ?>
 	
 	<div id="main">
 		<div id="page_container">
