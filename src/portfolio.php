@@ -21,12 +21,13 @@
 	<?php include("banner.php"); ?>
 	<div id="main">
 		<div id="button_container_main">
-			<button id="button_antiSocialMode" class="main" onclick="projectsToggle(1);"><b>Anti-Social Mode</b></button>
-			<button id="button_towerOfHanoi" class="main" onclick="projectsToggle(2);"><b>Tower of Hanoi</b></button>
-			<button id="button_nameGenerator" class="main" onclick="projectsToggle(3);"><b>Name Generator</b></button>
+			<button id="button_homeHub" class="main" onclick="projectsToggle(9);"><b>Home Hub 6270</b></button>
 			<button id="button_saveNewton" class="main" onclick="projectsToggle(4);"><b>Save Newton</b></button>
 			<button id="button_tickIT" class="main" onclick="projectsToggle(5);"><b>tickIT</b></button>
 			<button id="button_speakEasy" class="main" onclick="projectsToggle(6);"><b>SpeakEasy</b></button>
+			<button id="button_antiSocialMode" class="main" onclick="projectsToggle(1);"><b>Anti-Social Mode</b></button>
+			<button id="button_towerOfHanoi" class="main" onclick="projectsToggle(2);"><b>Tower of Hanoi</b></button>
+			<button id="button_nameGenerator" class="main" onclick="projectsToggle(3);"><b>Name Generator</b></button>
 			<button id="button_MIPS" class="main" onclick="projectsToggle(7);"><b>MIPS</b></button>
 			<button id="button_C++" class="main" onclick="projectsToggle(8);"><b>C++</b></button>
 		</div>
@@ -296,6 +297,42 @@
 				<p><h3>
 					My work specifically for CSIII at Kent State University. View this code  
 					<a target="_blank" rel="noopener noreferrer" href="https://github.com/Altoc/CPlusPlus/tree/master/CS3">here</a>.
+				</p></h3>
+			</div>
+			<div id="page_homeHub" class="page_project">		<!-- Home Hub 6270 -->
+				<h2><u>HomeHub6270 | Life Management System</u></h2>
+				<p><h3>
+					HomeHub6270 is a personal project I've tinkered with over time. It is built using Python3, Tkinter,
+					and MySQL. Specifics for deployment are found on the github readme for HomeHub, 
+					<a href="https://github.com/Altoc/homehub">here</a>.
+				</p></h3>
+				<p><h3>
+					<b>HomeHub6270 currently has these listed functionalities:</b>
+					<ul>
+						<li>User Accounts Management</li>
+						<li>Automatic Email Sending</li>
+						<li>Grocery List Management</li>
+						<li>Note System</li>
+					</ul>
+					<b>With these functionalities in the works:</b>
+					<ul>
+						<li>Bill Management System</li>
+						<li>Automatic SMS text message sending</li>
+						<li>Budget Management System</li>
+					</ul>
+					<h2><u>Images</u></h2>
+					<table>
+						<tr>
+							<td>
+							<img src="../static/images/homehub_1.png" width="620" height="92"/>
+							<img src="../static/images/homehub_2.png" width="620" height="92"/>
+							</td>
+							<td>
+							<img src="../static/images/homehub_3.png" width="620" height="92"/>
+							<img src="../static/images/homehub_4.png" width="620" height="92"/>
+							<img src="../static/images/homehub_5.png" width="620" height="92"/>
+							</td>
+					</table>
 				</p></h3>
 			</div>
 		</div>
