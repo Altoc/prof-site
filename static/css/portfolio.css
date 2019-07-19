@@ -109,6 +109,9 @@ button:hover{
 #page_cPlusPlus{
 	display: none;
 }
+#page_homeHub{
+	display: none;
+}
 #page_portfolio{
 	display: block;
 }

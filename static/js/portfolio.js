@@ -8,21 +8,23 @@ function projectsToggle(x){
 		case 6: var element = document.getElementById("page_speakEasy"); break;
 		case 7: var element = document.getElementById("page_MIPS"); break;
 		case 8: var element = document.getElementById("page_cPlusPlus"); break;
+		case 9: var element = document.getElementById("page_homeHub"); break;
 	}
 
 	if(!element.style.display || element.style.display == "none"){
-		page_antiSocialMode.style.display = "none";
-		page_towerOfHanoi.style.display = "none";
-		page_nameGenerator.style.display = "none";
-		page_saveNewton.style.display = "none";
-		page_tickIT.style.display = "none";
-		page_speakEasy.style.display = "none";
-		page_MIPS.style.display = "none";
-		page_cPlusPlus.style.display = "none";
-		page_portfolio.style.display = "none";
-		element.style.display = "block";
+		page_antiSocialMode.style.display 	= "none";
+		page_towerOfHanoi.style.display 	= "none";
+		page_nameGenerator.style.display 	= "none";
+		page_saveNewton.style.display 		= "none";
+		page_tickIT.style.display 		= "none";
+		page_speakEasy.style.display 		= "none";
+		page_MIPS.style.display 		= "none";
+		page_cPlusPlus.style.display 		= "none";
+		page_portfolio.style.display 		= "none";
+                page_homeHub.style.display 		= "none";
+		element.style.display 			= "block";
 	} else {
-		element.style.display = "none";
-		page_portfolio.style.display = "block";
+		element.style.display 		= "none";
+		page_portfolio.style.display 	= "block";
 	}
 }
