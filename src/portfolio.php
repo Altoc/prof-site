@@ -324,13 +324,13 @@
 					<table>
 						<tr>
 							<td>
-							<img src="../static/images/homehub_1.png" width="620" height="92"/>
-							<img src="../static/images/homehub_2.png" width="620" height="92"/>
+							<img src="../static/images/homehub_1.png" width="512" height="512"/>
+							<img src="../static/images/homehub_2.png" width="512" height="512"/>
 							</td>
 							<td>
-							<img src="../static/images/homehub_3.png" width="620" height="92"/>
-							<img src="../static/images/homehub_4.png" width="620" height="92"/>
-							<img src="../static/images/homehub_5.png" width="620" height="92"/>
+							<img src="../static/images/homehub_3.png" width="512" height="512"/>
+							<img src="../static/images/homehub_4.png" width="512" height="512"/>
+							<img src="../static/images/homehub_5.png" width="512" height="512"/>
 							</td>
 					</table>
 				</p></h3>
